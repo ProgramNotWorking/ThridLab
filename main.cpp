@@ -36,9 +36,9 @@ int main() {
         cout << "1) Print all info" << endl;
         cout << "2) Add train" << endl;
         cout << "3) Delete train" << endl;
-        cout << "4) Change train" << endl; // Not end yet, this case not change the train
+        cout << "4) Change train" << endl;
         cout << "5) Sort of train number" << endl;
-        cout << "6) Display train route" << endl; // check comm
+        cout << "6) Display train route" << endl;
         cout << "7) Display trains, where u can ride from VRN to another city" << endl;
         cout << "Another point - Exit" << endl;
         cin >> menuPoint;
