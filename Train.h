@@ -26,20 +26,11 @@ public:
     int getTrainNumber() const;
     list<string> getStationsList(const list<Train>& trains, int someTrainNumber);
     list<string> getStationsList();
-    string getTempStationsList();
-    string getType();
     void setTrainNumber();
     void setTempStationsList();
     void setType();
-    void setTrainNumber(int someTrainNumber);
-    void setTempStationsList(string someStationsList);
-    void setType(string someTrainType);
     void printInfoFromTrainNumber(const list<Train>& trains, int someTrainNumber);
     void displayInfoOneTrain();
-
-private:
-//    void splitAndDisplay(); // c++ is piece of shit lmao
-
 };
 
 

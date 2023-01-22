@@ -89,10 +89,6 @@ list<string> Train::getStationsList() {
     return listArray;
 }
 
-string Train::getType() {
-    return type;
-}
-
 void Train::setTrainNumber() {
     Train::trainNumber = 0;
     int trainNumberSet;
@@ -114,9 +110,7 @@ void Train::setTempStationsList() {
 void Train::setType() {
     Train::type = " ";
     string trainTypeSet;
-    //string tempTrashStringILoveCLanguage;
     cout << "Enter train type: ";
-    //getline(cin, trainTypeSet);
     cin >> trainTypeSet;
     Train::type = trainTypeSet;
 }
@@ -132,20 +126,4 @@ void Train::printInfoFromTrainNumber(const list<Train> &trains, int someTrainNum
     if (!isFind) {
         cout << "Train with this number is not exist" << endl;
     }
-}
-
-void Train::setTrainNumber(int someTrainNumber) {
-    Train::trainNumber = someTrainNumber;
-}
-
-void Train::setTempStationsList(string someStationsList) {
-    Train::tempStationsList = someStationsList;
-}
-
-void Train::setType(string someTrainType) {
-    Train::type = someTrainType;
-}
-
-string Train::getTempStationsList() {
-    return tempStationsList;
 }

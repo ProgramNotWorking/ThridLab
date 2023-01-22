@@ -43,7 +43,7 @@ int main() {
         cout << "Another point - Exit" << endl;
         cin >> menuPoint;
         switch (menuPoint) {
-            case 1: {
+            case 1: { // Вывод инфы на экран
                 Train tempTrain = getTrain(trains, 0);
 
                 if (isTrainChanged) {
@@ -59,7 +59,7 @@ int main() {
                 }
             }
                 break;
-            case 2: {
+            case 2: { // Добавление нового поезда
                 Train tempNewTrain;
                 tempNewTrain.setTrainNumber();
                 tempNewTrain.setTempStationsList();
@@ -70,7 +70,7 @@ int main() {
                 cout << "\n";
             }
                 break;
-            case 3: {
+            case 3: { // Удаление по порядковому номеру поезда
                 int indexTrainDelete;
                 cout << "Enter number of train, what u want to delete: ";
                 cin >> indexTrainDelete;
@@ -82,7 +82,7 @@ int main() {
                 cout << "\n";
             }
                 break;
-            case 4: {
+            case 4: { // Изменение конкретного поезда
                 isTrainChanged = true;
                 cout << "Enter what train u want to edit(Enter number of train): ";
                 cin >> editableTrainNumber;
@@ -123,7 +123,7 @@ int main() {
                 }
             }
                 break;
-            case 5: {
+            case 5: { // сортировка по возрастанию(по номерам поезда)
                 list<int> tempTrainNumbersList;
                 for (Train train : trains) {
                     tempTrainNumbersList.push_back(train.getTrainNumber());
@@ -137,7 +137,7 @@ int main() {
                 cout << "\n";
             }
                 break;
-            case 6: {
+            case 6: { // Вывод первой и последней станций(по номеру поезда)
                 Train tempTrain = getTrain(trains, 0);
                 int trainNumber;
                 cout << "Enter train number, which route u want display: ";
@@ -149,7 +149,7 @@ int main() {
                 cout << "\n";
             }
                 break;
-            case 7: {
+            case 7: { // Вывод номера и маршрута, где есть ВРН и станция которую вводит пользователь
                 string endStation;
                 cout << "Enter station, through which the train must go: ";
                 cin >> endStation;
@@ -175,8 +175,6 @@ int main() {
                 return 0;
         }
     }
-
-
 }
 
 Train getTrain(list<Train> trains, int index) {
